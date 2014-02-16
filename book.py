@@ -57,7 +57,7 @@ class OrderBook(object):
         self.price = 100
         self.transactions = defaultdict(list)
         self.vol = vol
-        self._close_price = [self.price]*100
+        self._close_price = [self.price] * 100
 
     def include_agents(self, Agent):
         """
@@ -180,8 +180,8 @@ class OrderBook(object):
                 # Record the transaction
                 highest_bid[1] = highest_bid[1] - size
                 # Trade the shares
-                self.price = entry
-                # This line can probably be deleted
+                self.price = entry / 100.
+                # Set price of last trade in terms of $ and cents
                 if highest_bid[1] == 0:
                     # If highest bid is exhausted
                     if highest_bid[3] != 'Me':

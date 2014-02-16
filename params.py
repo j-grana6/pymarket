@@ -1,4 +1,5 @@
 import numpy as np
+
 params = {
 'num_inst': 20, # Number of institutional traders
 'num_chart': 250, # number of chartists
