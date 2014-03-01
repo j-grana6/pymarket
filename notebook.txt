@@ -1,0 +1,22 @@
+Agent Based Approach to Investors' Behavior and Asset
+Price Fluctuation in Financial Markets.
+================================================================
+
+http://jasss.soc.surrey.ac.uk/6/3/3.html
+
+Review : This paper takes a similar approach to mine but there are some flaws and
+ differences.
+
+Flaw : They misinterpret prospect theory preferences.  In essence, prospect theory
+agents are backward looking.
+
+Model Difference : I am using an order-book market instead of an ad-hoc market
+clearing mechanism.
+
+Model Difference : In their model, Agents trade at random, in my model the order of
+trade will be determined by agent's valuation.  This will add some mathematical structure
+(I **think** my model can be formulated as a continuous time Markov chain, but I
+ need to think about this.)
+
+Major design difference : I am more concerned with "who trades with who" when
+the fundamental price is shocked.  This captures the dynamics of the adjustment process.
